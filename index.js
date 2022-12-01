@@ -1,8 +1,11 @@
 /* const express = require("express"); */
 import express from "express";
 import dataBase from './database/dataBase.js';
+import productoRouter from "./routes/ProductoRoute.js";
 
 const app = express()
+
+app.use('/producto', productoRouter)
 
 try {
     await dataBase.authenticate()
