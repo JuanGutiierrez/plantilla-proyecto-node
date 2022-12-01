@@ -1,5 +1,6 @@
 /* const express = require("express"); */
 import express from "express";
+import { dataBase } from './database/dataBase.js';
 
 const app = express()
 
